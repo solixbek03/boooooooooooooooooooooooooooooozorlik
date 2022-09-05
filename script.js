@@ -31,9 +31,3 @@ li.textContent = boom
 li.classList.add('text-light')
 elResult.appendChild(li)
 
-
-  // elResult.innerHTML = '';
-  // let li = document.createElement("li")
-  // li.textContent = boom
-  // li.classList.add('text-light')
-  // elResult.appendChild(li)
