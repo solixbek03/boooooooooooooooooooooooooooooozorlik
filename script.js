@@ -12,15 +12,15 @@ elButton.addEventListener('click', function(evt){
   elInput.value = '';
   bozorlikRoyhati.push(elinputVall);
   localStorage.setItem('bozorlik', bozorlikRoyhati);
-  
+  let boom = localStorage.getItem('bozorlik');
 
-  for (i=0; i<bozorlikRoyhati.length; i++) {
-    elResult.innerHTML = '';
-    let li = document.createElement("li")
-    li.textContent = localStorage.getItem('bozorlik');
-    li.classList.add('text-light')
-    elResult.appendChild(li)
-  }
+
+  elResult.innerHTML = '';
+  let li = document.createElement("li")
+  li.textContent = boom
+  li.classList.add('text-light')
+  elResult.appendChild(li)
+  
 })
 
 
